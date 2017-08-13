@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class test
+{
+
+  public static void main(String arg[])
+  {
+    Scanner in=new Scanner(System.in);
+    String abc=in.nextLine();
+    
+    String [] arr = abc.split(" ");
+
+    int a = Integer.parseInt(arr[0]);
+    int b = Integer.parseInt(arr[1]);
+
+    System.out.println(a+b);
+  }
+
+}
