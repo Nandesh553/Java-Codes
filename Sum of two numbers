@@ -8,12 +8,12 @@ public class test
     Scanner in=new Scanner(System.in);
     String abc=in.nextLine();
     
-    char a = abc.charAt(0);
-    char b = abc.charAt(2);
+    String [] arr = abc.split(" ");
 
-    int c=Character.getNumericValue(a);
-	int d=Character.getNumericValue(b);
-    System.out.println(c+d);
+    int a = Integer.parseInt(arr[0]);
+    int b = Integer.parseInt(arr[1]);
+
+    System.out.println(a+b);
   }
 
 }
