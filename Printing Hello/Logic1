@@ -1,0 +1,19 @@
+//Printing hello 100 times without a loop
+
+public class test
+{
+	static int i=100;
+	static int k=1;
+	
+	public static void main(String arg[])
+	{
+		foo();
+	}
+	
+	static void foo()
+	{
+		int j=1/i--;
+		System.out.println("Hello");
+		main(null);
+	}
+}
