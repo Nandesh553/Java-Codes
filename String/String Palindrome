@@ -1,0 +1,23 @@
+import java.util.*;
+public class test
+{
+	public static void main(String[] args)
+	{
+		Scanner in = new Scanner(System.in);
+		String get = in.nextLine();
+		char[] input = get.toCharArray();
+		char[] out = new char[get.length()];
+		int k=0;
+		for(int i=get.length()-1;i>=0;i--)
+		{
+				out[k]=input[i];
+				k++;
+				
+		}
+		String b = new String(out);
+		if(get.equals(b))
+			System.out.println("Yes");
+		else
+			System.out.println("No");	
+	}
+}
