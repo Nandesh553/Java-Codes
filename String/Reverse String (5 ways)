@@ -1,0 +1,50 @@
+//********Using StringBuilder reverse() method.**********
+import java.util.*;
+
+public class test
+{
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String s1= in.nextLine();
+		StringBuilder s2=new StringBuilder(s1);
+		System.out.println(s2.reverse());
+	}
+}
+
+
+
+//**********Converting string into char Array and printing it in reverse order.**********
+import java.util.*;
+
+public class test
+{
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String s1=in.nextLine();
+		char[] s2=s1.toCharArray();
+		for(int i=s2.length-1;i>=0;i--)
+		{
+			System.out.print(s2[i]);
+		}
+	}
+}
+
+
+//**********getbytes() method and then reverse**********
+//**********Collections reverse method**********
+	Collections.reverse(trial1);
+        ListIterator li = trial1.listIterator();
+        while (li.hasNext())
+            System.out.print(li.next());
+    
+//**********To char Array and then using temporary variable to change it.**********
+	    int left, right=0;
+      right = temparray.length-1;
+ 
+        for (left=0; left < right ; left++ ,right--)
+        {
+            // Swap values of left and right
+            char temp = temparray[left];
+            temparray[left] = temparray[right];
+            temparray[right]=temp;
+        }
